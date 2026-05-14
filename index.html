@@ -198,13 +198,33 @@ footer{background:var(--charcoal);padding:2.5rem 5rem;display:flex;align-items:c
 .fo{font-size:.73rem;color:rgba(255,255,255,.26);letter-spacing:.06em;display:block;margin-bottom:.2rem;}
 .fc{font-size:.7rem;color:rgba(255,255,255,.16);letter-spacing:.04em;}
 
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
 @media(max-width:960px){
   nav{padding:1rem 1.5rem;}.nls{display:none;}
   .hero,.sdor,.surg,.sdiag,.scomo,.sdep,.sadv,.sazm,.sfinal{padding-left:1.5rem;padding-right:1.5rem;}
-  .hi,.dg,.ag,.azg{grid-template-columns:1fr;gap:3rem;}
-  .hero{padding-top:4rem;}.hpw{max-width:300px;margin:0 auto;}
+  .hi,.dg,.ag,.azg{grid-template-columns:1fr;gap:2rem;}
+  .hero{padding-top:5rem;padding-bottom:3rem;}
+  .hpw{display:none;}
+  .ht{font-size:2.2rem;}
   .sw,.dpg,.ui{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:.8rem;}
+  .dsn{font-size:1.6rem;}
+  .dor-full{font-size:.95rem;}
+  .sdor,.scomo,.sdep,.sadv,.sazm{padding-top:3rem;padding-bottom:3rem;}
+  .sdiag{padding-top:3rem;padding-bottom:3rem;}
+  .sfinal{padding-top:3.5rem;padding-bottom:3.5rem;}
+  .surg{padding-top:2.5rem;padding-bottom:2.5rem;}
+  .dpg{grid-template-columns:1fr;}
+  .ui{grid-template-columns:1fr;}
+  .ch{margin-bottom:2.5rem;}
+  .dph{margin-bottom:2rem;}
+  .ftit{font-size:1.9rem;}
+  .fbs{flex-direction:column;align-items:center;}
+  .bg2,.bow{width:100%;justify-content:center;text-align:center;}
   footer{flex-direction:column;gap:1.5rem;text-align:center;padding:2rem 1.5rem;}.fr{text-align:center;}
+  .diag-form-row{flex-direction:column;}
+  .dc2{margin-top:2rem;}
+  .din .st{font-size:1.8rem;}
 }
 </style>
 </head>
@@ -260,7 +280,7 @@ footer{background:var(--charcoal);padding:2.5rem 5rem;display:flex;align-items:c
     </div>
 
     <!-- Stats em linha -->
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:3rem;">
+    <div class="stats-grid" style="margin-bottom:3rem;">
       <div class="dss reveal d1"><span class="dsn">28M</span><span class="dsl">casos de golpe via PIX em 2025</span></div>
       <div class="dss reveal d2"><span class="dsn">R$29B</span><span class="dsl">em prejuízo estimado no período</span></div>
       <div class="dss reveal d3"><span class="dsn">51%</span><span class="dsl">dos brasileiros sofreram fraude em 2024</span></div>
